@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="16dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter City Name"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:inputType="textCapWords"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_one_time_task"
+        android:text="One Time Task"
+        android:layout_marginTop="8dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+        <Button
+            android:id="@+id/btn_periodic_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Periodic Task"
+            android:layout_marginRight="8dp"/>
+
+        <Button
+            android:id="@+id/btn_cancel_periodic_task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cancel"
+            android:enabled="false"
+            android:layout_marginLeft="8dp"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_status"
+        android:text="Progress Status: "
+        android:layout_marginTop="8dp"
+        android:textSize="16sp"/>
+</LinearLayout>
